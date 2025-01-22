@@ -1,0 +1,69 @@
+What kind of data does pandas handle?
+1.I want to start using pandas
+2.I want to store passenger data of the Titanic. For a number of passengers, I know the name (characters), age (integers) and sex (male/female) data.
+3.I’m just interested in working with the data in the column Age
+4.I want to know the maximum Age of the passengers
+5.I’m interested in some basic statistics of the numerical data of my data table
+
+How do I read and write tabular data?      titanic.csv
+1.I want to analyze the Titanic passenger data, available as a CSV file.
+2.I want to see the first 8 rows of a pandas DataFrame.
+3.My colleague requested the Titanic data as a spreadsheet.
+4.I’m interested in a technical summary of a DataFrame
+
+
+How do I select a subset of a DataFrame?     titanic.csv
+1.I’m interested in the age of the Titanic passengers.
+2.I’m interested in the age and sex of the Titanic passengers.
+3.I’m interested in the passengers older than 35 years.
+4.I’m interested in the Titanic passengers from cabin class 2 and 3.
+5.I want to work with passenger data for which the age is known.
+6.I’m interested in the names of the passengers older than 35 years.
+7.I’m interested in rows 10 till 25 and columns 3 to 5.
+
+How do I create plots in pandas?    air_quality_no2.csv
+1.I want a quick visual check of the data.
+2.I want to plot only the columns of the data table with the data from Paris.
+3.I want to visually compare the NO_2 values measured in London versus Paris.
+4.I want each of the columns in a separate subplot.
+5.I want to further customize, extend or save the resulting plot.
+
+How to create new columns derived from existing columns        air_quality_no2.csv
+1.I want to express the NO_2 concentration of the station in London in mg/m3
+2.I want to check the ratio of the values in Paris versus Antwerp and save the result in a new column.
+3.I want to rename the data columns to the corresponding station identifiers used by OpenAQ.
+
+How to calculate summary statistics    titanic.csv
+1.What is the average age of the Titanic passengers?
+2.What is the median age and ticket fare price of the Titanic passengers?
+3.What is the average age for male versus female Titanic passengers?
+4.What is the mean ticket fare price for each of the sex and cabin class combinations?
+5.What is the number of passengers in each of the cabin classes?
+
+How to reshape the layout of tables     titanic.csv  ,    air_quality_long.csv
+1.I want to sort the Titanic data according to the age of the passengers.
+2.I want to sort the Titanic data according to the cabin class and age in descending order.
+3.I want the values for the three stations as separate columns next to each other.
+4.I want the mean concentrations for NO_2 and PM_2.5 in each of the stations in table form.
+5.I want to collect all air quality NO_2 measurements in a single column (long format).
+
+How to combine data from multiple tables           air_quality_no2_long.csv , air_quality_pm25_long.csv , air_quality_stations.csv  , air_quality_parameters.csv
+1.I want to combine the measurements of NO_2 and PM_25, two tables with a similar structure, in a single table.
+2.Add the station coordinates, provided by the stations metadata table, to the corresponding rows in the measurements table.
+3.Add the parameters’ full description and name, provided by the parameters metadata table, to the measurements table.
+
+How to handle time series data with ease            air_quality_parameters.csv , air_quality_stations.csv , data/air_quality_pm25_long.csv , air_quality_no2_long.csv
+1.I want to work with the dates in the column datetime as datetime objects instead of plain text
+2.I want to add a new column to the DataFrame containing only the month of the measurement
+3.What is the average NO_2 concentration for each day of the week for each of the measurement locations?
+4.Plot the typical NO_2 pattern during the day of our time series of all stations together. In other words, what is the average value for each hour of the day?
+5.Create a plot of the NO_2 values in the different stations from the 20th of May till the end of 21st of May
+6.Aggregate the current hourly time series values to the monthly maximum value in each of the stations.
+7.Make a plot of the daily mean NO_2 value in each of the stations.
+
+How to manipulate textual data
+1.Make all name characters lowercase.
+2.Create a new column Surname that contains the surname of the passengers by extracting the part before the comma.
+3.Extract the passenger data about the countesses on board of the Titanic.
+4.Which passenger of the Titanic has the longest name?
+5.In the “Sex” column, replace values of “male” by “M” and values of “female” by “F”.
